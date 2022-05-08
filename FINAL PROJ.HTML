@@ -1,0 +1,80 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fina submission</title>
+</head>
+<body>
+    <form onsubmit="return false;">
+        <label for="name">Name</label>
+        <input type="text"  id="name"><br><br>
+        <label for="fname">Father Name</label>
+        <input type="text"  id="fname"><br><br>
+        <label for="mail">E mail</label>
+        <input type="email"  id="mail"><br><br>
+        <input type="submit" id="submit" value="submit">
+    </form>
+
+    <script src="inndex.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        STUDENT 
+    </title>
+    <link rel="stylesheet" href="FINAL PROJ.CSS">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Student Name</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName"> <br><br>
+                    </div>
+                    <div>
+                        <label>Student ID</label>
+                        <input type="text" name="empCode" id="empCode"> <br><br>
+                    </div>
+                    <div>
+                        <label>Class</label>
+                        <input type="text" name="salary" id="salary"><br><br>
+                    </div>
+                    <div>
+                        <label>University name</label>
+                        <input type="text" name="city" id="city"><br><br>
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit"> <br> <br>
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>EMP Code</th>
+                            <th>Salary</th>
+                            <th>City</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="FINAL.js"></script>
+</body>
+
+</html>
